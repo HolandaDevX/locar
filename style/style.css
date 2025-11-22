@@ -1,0 +1,321 @@
+@import url('https://fonts.googleapis.com/css2?family=Stack+Sans+Text:wght@200..700&display=swap');
+
+:root {
+    --primary-color: #FFD532;
+    --secondary-color: #6273FF;
+
+    --font-default: "Stack Sans Text", sans-serif;
+    --padding-default: 1rem;
+    --margin-default: 1.2rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: var(--font-default);
+    font-size: 1.6rem;
+    text-align: center;
+}
+
+.main-header {
+    padding: var(--padding-default);
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+}
+
+.logo {
+    text-decoration: none;
+    color: black;
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+
+/* Menu mobile */
+
+.menu-btn {
+    height: 24px;
+}
+
+.icon-menu {
+    position: relative;
+    cursor: pointer;
+}
+
+.nav-icon {
+    background-color: black;
+    display: inline-block;
+    width: 24px;
+    height: 2px;
+    position: relative;
+}
+
+.nav-icon::after,
+.nav-icon::before {
+    content: "";
+    background-color: black;
+    display: inline-block;
+    width: 24px;
+    height: 2px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    transition: transform .2s;
+}
+
+.nav-icon::after {
+    transform: translateY(8px);
+}
+
+.nav-icon::before {
+    transform: translateY(-8px);
+}
+
+.menu-btn:checked+.icon-menu .nav-icon {
+    background-color: transparent;
+}
+
+.menu-btn:checked+.icon-menu .nav-icon::after {
+    transform: rotate(45deg);
+}
+
+.menu-btn:checked+.icon-menu .nav-icon::before {
+    transform: rotate(-45deg);
+}
+
+.hide {
+    position: absolute;
+    clip: rect(1px, 1px, 1px, 1px);
+    padding: 0;
+    border: 0;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+}
+
+
+.menu {
+    display: none;
+    padding-right: var(--padding-default);
+    padding-left: var(--padding-default);
+    position: relative;
+    list-style: none;
+    text-align: right;
+}
+
+.item a {
+    margin-top: var(--margin-default);
+    display: block;
+    text-decoration: none;
+    color: black;
+    font-size: 1.75rem;
+    font-weight: 200;
+}
+
+.menu-btn:checked~.menu {
+    height: 260px;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 100%;
+    display: block;
+    background-color: rgb(255, 255, 255);
+}
+
+.hero {
+    padding: var(--padding-default);
+}
+
+.titulo_hero {
+    margin-bottom: var(--margin-default);
+    font-size: 4rem;
+}
+
+.texto_hero {
+    margin-bottom: calc(var(--margin-default)*2);
+    font-size: 1.8rem;
+    font-weight: 100;
+}
+
+.btn-alugar {
+    padding: var(--padding-default);
+    text-decoration: none;
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: black;
+    background-color: var(--secondary-color);
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.shop {
+    margin-top: var(--margin-default);
+}
+
+.carros {
+    padding: 3em;
+}
+
+.nome_modelo {
+    margin-top: calc(var(--margin-default) / 3);
+    margin-bottom: var(--margin-default);
+    color: black;
+}
+
+.card {
+    padding: calc(var(--padding-default)*2);
+    margin-bottom: var(--margin-default);
+    font-size: 1.8rem;
+    border: 1px solid var(--primary-color);
+    border-radius: 8px;
+}
+
+.acessorios {
+    list-style: none;
+    color: black;
+}
+
+.acessorios li {
+    margin-bottom: .8em;
+}
+
+.btn_reserva {
+    padding: .8rem;
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.695);
+    background-color: var(--secondary-color);
+    border-radius: 8px;
+}
+
+.depoimentos {
+    padding: 2rem;
+}
+
+.testemunho {
+    margin-bottom: var(--margin-default);
+    padding: var(--padding-default);
+    border: 1px solid var(--secondary-color);
+    border-radius: 8px;
+    box-shadow: .5px .5px .5px black;
+}
+
+.perfil {
+    margin-bottom: 1em;
+}
+
+.comentario {
+    line-height: 1.5;
+}
+
+
+.faq-servico{
+    margin-bottom: .8em;
+    font-size: 3rem;
+    font-weight: 400;
+}
+
+.faq{
+    padding: var(--padding-default);
+    margin-bottom: var(--margin-default);
+    background-color: var(--secondary-color);
+    text-align: left;
+}
+
+.pergunta{
+    font-size: 1.8rem;
+}
+
+.resposta{
+    margin-top: var(--margin-default);
+    line-height: 1.5;
+}
+
+.contato {
+    padding: 1.6rem;
+    background-color: var(--secondary-color);
+}
+
+.forms_contato legend {
+    margin-bottom: var(--margin-default);
+    font-size: 1.8rem;
+    /* display: flex;
+    flex-direction: column; */
+}
+
+.forms_contato fieldset {
+    border: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.credencial_cliente{
+    border: none;
+    padding: .6em;
+}
+
+.credencial_cliente:focus{
+    transition: all .2s ease;
+    padding-left: .8em;
+}
+
+.credencial_cliente:invalid{
+    border: 1px solid red;
+}
+.credencial_cliente:valid{
+    border: 1px solid rgb(154, 255, 13);
+}
+
+.msg_cliente{
+    width: 330px;
+    height: 150px;
+}
+
+.enviar_msg{
+    padding: 1em;
+    width: 12rem;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    border: none;
+    border-radius: 8px;
+}
+
+.contatos{
+    margin-top: var(--margin-default);
+}
+
+.footer-main{
+    background-color: var(--primary-color)
+}
+
+.sobre_footer p{
+    padding: var(--padding-default);
+    font-size: 1.5rem;  
+    font-weight: 200;
+    text-align: left;
+}
+.links_footer{
+    margin-top: .8em;
+    margin-bottom: 1em;
+}
+
+.links_footer a {
+    display: inline-block;
+    margin-right: .8em;
+}
+
+.autorais_footer{
+    padding: var(--padding-default);
+}

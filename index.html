@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Locar | Locação de veículos</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header class="main-header">
+
+        <a href="index.html" class="logo">Locar</a>
+
+        <nav class="main-nav">
+            <!-- menu mobile -->
+            <input type="checkbox" class="menu-btn hide" id="menu-btn">
+            <label for="menu-btn" class="icon-menu">
+                <span class="nav-icon"></span>
+            </label>
+
+
+            <ul class="menu">
+
+                <li class="item">
+                    <a href="#sobre">Sobre</a>
+                </li>
+
+                <li class="item">
+                    <a href="#contato">Contato</a>
+                </li>
+
+                <li class="item">
+                    <a href="#">Dúvidas</a>
+                </li>
+
+                <li class="item">
+                    <a href="#carro">Alugar carro</a>
+                </li>
+
+                <li class="item">
+                    <a href="#">Minhas reservas</a>
+                </li>
+
+                <li class="item">
+                    <a href="#">Criar conta</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" id="sobre">
+            <h1 class="titulo_hero">
+                Locar - Locação de veículos
+            </h1>
+
+            <p class="texto_hero">
+                Na Locar, você escolhe, reserva e dirige.
+                Sem complicações, apenas liberdade para ir mais longe.
+            </p>
+
+            <a href="#" class="btn-alugar">Alugar agora</a>
+        </section>
+
+        <section class="shop" id="carro ">
+            <article class="carros">
+
+                <div class="card">
+
+                    <div class="container_img">
+                        <img src="img/carro01.webp" alt="carro" class="carro">
+                    </div>
+                    <h3 class="nome_modelo">
+                        Modelo: Fiat Pulse
+                    </h3>
+
+                    <ul class="acessorios">
+
+                        <li>
+                            Ano: 2022
+                        </li>
+
+                        <li>
+                            4 Portas
+                        </li>
+
+                        <li>
+                            Porta-malas de 480L
+                        </li>
+
+                        <li>
+                            Consumo: 15km/l
+                        </li>
+                    </ul>
+
+                    <a href="#" class="btn_reserva">Reservar</a>
+                </div>
+
+
+
+                <div class="card">
+
+                    <div class="container_img">
+                        <img src="img/carro02.webp" alt="carro" class="carro">
+                    </div>
+
+                    <h3 class="nome_modelo">
+                        Modelo: Citroen Cactus
+                    </h3>
+                    <ul class="acessorios">
+
+                        <li>
+                            Ano: 2022
+                        </li>
+
+                        <li>
+                            4 Portas
+                        </li>
+
+                        <li>
+                            Porta-malas de 480L
+                        </li>
+
+                        <li>
+                            Consumo: 15km/l
+                        </li>
+                    </ul>
+
+                    <a href="#" class="btn_reserva">Reservar</a>
+                </div>
+
+
+                <div class="card">
+
+
+                    <div class="container_img">
+                        <img src="img/carro03.png" alt="carro" class="carro">
+                    </div>
+
+                    <h3 class="nome_modelo">
+                        Modelo: Toyota Corolla
+                    </h3>
+                    <ul class="acessorios">
+
+                        <li>
+                            Ano: 2022
+                        </li>
+
+                        <li>
+                            4 Portas
+                        </li>
+
+                        <li>
+                            Porta-malas de 480L
+                        </li>
+
+                        <li>
+                            Consumo: 15km/l
+                        </li>
+                    </ul>
+
+                    <a href="#" class="btn_reserva">Reservar</a>
+                </div>
+            </article>
+        </section>
+
+        <section class="depoimentos">
+            <article class="testemunho">
+                <div class="perfil">
+                    <img src="img/perfil.png" alt="foto de perfil">
+                </div>
+
+                <p class="comentario">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti labore veritatis sed vel debitis
+                    maiores pl
+                </p>
+            </article>
+            <article class="testemunho">
+                <div class="perfil">
+                    <img src="img/perfil.png" alt="foto de perfil">
+                </div>
+
+                <p class="comentario">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti labore veritatis sed vel debitis
+                    maiores.
+                </p>
+            </article>
+            <article class="testemunho">
+                <div class="perfil">
+                    <img src="img/perfil.png" alt="foto de perfilf">
+                </div>
+
+                <p class="comentario">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                </p>
+            </article>
+        </section>
+
+        <section class="duvidas">
+            <h2 class="faq-servico">
+                Perguntas frequentes
+            </h2>
+
+            <details class="faq">
+                <summary class="pergunta">Quem pode alugar?</summary>
+                <p class="resposta">
+                    Para alugar um carro, o motorista precisa ter mais de 21 anos, apresentar carteira de habilitação válida (CNH) e um cartão de crédito em seu nome para garantia da locação.
+                </p>
+            </details>
+
+            <details class="faq">
+                <summary class="pergunta">
+                    Como faço para reservar um carro?
+                </summary>
+                <p class="resposta">
+                    Você pode fazer a reserva pelo site, escolhendo o carro desejado, as datas de retirada e devolução, e confirmando o pagamento. Também é possível reservar pelo telefone ou diretamente na loja. 
+                </p>
+            </details>
+
+            <details class="faq">
+                <summary class="pergunta">
+                    O que está incluso no valor do aluguel?
+                </summary>
+                <p class="resposta">
+                    O valor inclui quilometragem livre (ou limitada, dependendo do plano), seguro básico contra terceiros e assistência 24 horas. Combustível, pedágios e multas não estão incluídos.
+                </p>
+            </details>
+
+            <details class="faq">
+                <summary class="pergunta">
+                    O que devo fazer em caso de acidente ou problema com o carro?
+                </summary>
+                <p class="resposta">
+                    Entre em contato imediatamente com a central de atendimento 24h da locadora. Eles vão orientar sobre os procedimentos de segurança, registro de ocorrência e substituição do veículo, se necessário.
+                </p>
+            </details>
+        </section>
+
+        <article class="contato" id="contato">
+            <form action="" method="post" class="forms_contato">
+                <legend>Nos contate</legend>
+
+                <fieldset>
+                    <input type="text" name="nomeCliente" id="nomeCliente" placeholder="Digite seu nome" required
+                        class="credencial_cliente">
+                    <input type="email" name="emailCliente" id="emailCliente" placeholder="voce@gmail.com" required
+                        class="credencial_cliente">
+                    <textarea name="msgCliente" id="msgCliente" placeholder="Mande sua mensagem" required
+                        class="msg_cliente">
+                    </textarea>
+                    <button type="submit" class="enviar_msg">Enviar</button>
+
+                </fieldset>
+            </form>
+
+            <address class="contatos">
+                <p class="telefone">+55 98 9 0000 0000</p>
+                <p class="email">locarveiculos@gmail.com</p>
+            </address>
+        </article>
+
+    </main>
+
+    <footer class="footer-main">
+        <section class="sobre_footer">
+            <p>
+                <strong>Locar</strong> é um sistema simples e moderno de locação de veículos, desenvolvido para oferecer
+                praticidade, segurança e conforto na hora de alugar seu carro. Mobilidade pensada para o seu dia a dia.
+            </p>
+        </section>
+        <section class="links_footer">
+            <a href="#">Início</a>
+
+            <a href="#">Veículos</a>
+
+            <a href="#">Sobre</a>
+
+            <a href="#">Contato</a>
+
+            <a href="#">Políticas de Privacidade</a>
+
+            <a href="#">Termos de Uso</a>
+        </section>
+
+        <section class="autorais_footer">
+            <p>
+                 Locar — Todos os direitos reservados.
+                Projeto desenvolvido para fins educacionais.
+            </p>
+        </section>
+    </footer>
+</body>
+
+</html>

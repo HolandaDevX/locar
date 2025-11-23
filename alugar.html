@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>locar aluguel</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+        <header class="main-header">
+
+        <a href="index.html" class="logo">Locar</a>
+
+        <nav class="main-nav">
+            <!-- menu mobile -->
+            <input type="checkbox" class="menu-btn hide" id="menu-btn">
+            <label for="menu-btn" class="icon-menu">
+                <span class="nav-icon"></span>
+            </label>
+
+
+            <ul class="menu">
+
+                <li class="item">
+                    <a href="#sobre">Sobre</a>
+                </li>
+
+                <li class="item">
+                    <a href="#contato">Contato</a>
+                </li>
+
+                <li class="item">
+                    <a href="#">Dúvidas</a>
+                </li>
+
+                <li class="item">
+                    <a href="#carro">Alugar carro</a>
+                </li>
+
+                <li class="item">
+                    <a href="#">Minhas reservas</a>
+                </li>
+
+                <li class="item">
+                    <a href="#">Criar conta</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+   <form action="" method="post" class="form-reserva-veiculo">
+    
+    <fieldset class="dadoContato">
+        <legend>Dados de Contato</legend>
+        <label for="emailCliente" class="label-reserva">E-mail:
+            <input type="email" name="emailCliente" class="input-reserva" placeholder="seu@email.com" required>
+        </label>
+        <label for="telCliente" class="label-reserva">Telefone/Celular:
+            <input type="tel" name="telCliente" class="input-reserva" placeholder="(xx) 9xxxx-xxxx" required>
+        </label>
+    </fieldset>
+
+    <fieldset class="dadosgerais">
+        <legend>Dados do Condutor</legend>
+
+        <label for="nameCliente" class="label-reserva"> Digite seu nome:
+            <input type="text" name="nameCliente" class="input-reserva" placeholder="Ex: João Oliveira" required>
+        </label>
+
+        <label for="nasc" class="label-reserva">Data de nascimento:
+            <input type="date" name="nasc" class="input-reserva" required>
+        </label>
+
+        <label for="cpfCliente" class="label-reserva">Digite seu CPF:
+            <input type="text" inputmode="numeric" name="cpfCliente" class="cpfCliente input-reserva" maxlength="14" placeholder="000.000.000-00" required>
+        </label>
+
+        <label for="cnhRegisto" class="label-reserva">Registro da CNH:
+            <input type="text" inputmode="numeric" name="cnhRegisto" maxlength="11" placeholder="Nº Registro" class="input-reserva" required>
+        </label>
+    </fieldset>
+
+    <fieldset class="datas-reserva">
+        <legend>Período da Locação</legend>
+        
+        <label for="dataRetirada" class="label-reserva">Data de Retirada:
+            <input type="datetime-local" name="dataRetirada" class="input-reserva" required>
+        </label>
+
+        <label for="dataDevolucao" class="label-reserva">Data de Devolução:
+            <input type="datetime-local" name="dataDevolucao" class="input-reserva" required>
+        </label>
+    </fieldset>
+
+    <fieldset class="veiculosDisponiveis">
+        <legend>Escolha seu veículo</legend>
+        <label for="veiculos" class="label-reserva">Modelo desejado:</label>
+        <select name="veiculos" id="veiculos" class="input-reserva">
+            <option value="" disabled selected>Selecione um carro...</option>
+            <option value="cactus">C4 Cactus</option>
+            <option value="pulse">Fiat Pulse</option>
+            <option value="corolla">Toyota Corolla</option>
+        </select>
+    </fieldset>
+
+    <button type="submit" class="confirmarCarro">Confirmar Reserva</button>
+</form>
+
+</form>
+</body>
+</html>

@@ -319,3 +319,54 @@ body {
 .autorais_footer{
     padding: var(--padding-default);
 }
+
+/* Style formulário de alugar o carro */
+
+.form-reserva-veiculo{
+    max-width: 30em;
+    margin: var(--margin-default);
+    padding: var(--padding-default);
+    border: 1px solid  var(--secondary-color);
+    border-radius: 10px;  
+}
+
+.form-reserva-veiculo legend{
+    margin-bottom: .4em;
+    font-size: 1.8rem;
+    text-transform: uppercase;  
+    letter-spacing: 1.3;
+}
+
+.dadoContato, .dadosgerais, .datas-reserva, .veiculosDisponiveis{
+    border: none;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.label-reserva{
+    margin-bottom: .6em;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 300;
+}
+
+.input-reserva{
+    padding: .4em;
+}
+
+.input-reserva:invalid{
+    border: 1px solid red
+}
+.input-reserva:valid{
+    border: 1px solid green
+}
+
+.confirmarCarro{
+    font-size: 1.8rem;
+    border: none;
+    text-transform: uppercase;
+    background-color: var(--secondary-color);
+    padding: .8em;
+    margin-top: 1em;
+}

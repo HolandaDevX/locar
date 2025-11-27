@@ -114,8 +114,8 @@ body {
 }
 
 .item a {
-    margin-top: var(--margin-default);
     display: block;
+    margin-top: var(--margin-default);
     text-decoration: none;
     color: black;
     font-size: 1.75rem;
@@ -123,56 +123,76 @@ body {
 }
 
 .menu-btn:checked~.menu {
+    display: block;
     height: 260px;
     position: absolute;
     right: 0;
     left: 0;
     top: 100%;
-    display: block;
     background-color: rgb(255, 255, 255);
 }
 
 .hero {
+    margin-top: var(--margin-default);
     padding: var(--padding-default);
 }
 
-.titulo_hero {
+.title_hero {
     margin-bottom: var(--margin-default);
     font-size: 4rem;
 }
 
-.texto_hero {
+.content_hero {
     margin-bottom: calc(var(--margin-default)*2);
-    font-size: 1.8rem;
+    font-size: 2rem;
     font-weight: 100;
 }
 
-.btn-alugar {
-    padding: var(--padding-default);
-    text-decoration: none;
+.btn-Tohire {
+    margin: auto;
+    display: block;
+    width: fit-content;
+    padding: 1.6rem;
     font-size: 2rem;
+    text-decoration: none;
     text-transform: uppercase;
+    letter-spacing: 2px;
     color: black;
     background-color: var(--secondary-color);
     border-radius: 8px;
     cursor: pointer;
 }
 
+@keyframes btn-Tohire {
+    0%{
+        transform: scale(.8);
+    }
+    
+    100%{
+        transform: scale(1);
+    }
+}
+
+
+.btn-Tohire{
+    animation: btn-Tohire .8s infinite alternate-reverse;
+}
+
 .shop {
     margin-top: var(--margin-default);
 }
 
-.carros {
+.carrs {
     padding: 3em;
 }
 
-.nome_modelo {
+.carr_name   {
     margin-top: calc(var(--margin-default) / 3);
     margin-bottom: var(--margin-default);
     color: black;
 }
 
-.card {
+.card_carr {
     padding: calc(var(--padding-default)*2);
     margin-bottom: var(--margin-default);
     font-size: 1.8rem;
@@ -180,16 +200,16 @@ body {
     border-radius: 8px;
 }
 
-.acessorios {
+.series_item {
     list-style: none;
     color: black;
 }
 
-.acessorios li {
+.series_item li {
     margin-bottom: .8em;
 }
 
-.btn_reserva {
+.btn_reserve {
     padding: .8rem;
     display: block;
     text-decoration: none;
@@ -199,28 +219,39 @@ body {
     border-radius: 8px;
 }
 
-.depoimentos {
+.testimonials {
     padding: 2rem;
 }
 
-.testemunho {
+.title_testimonials{
+    font-size: 3rem;
+    margin-bottom: var(--margin-default);
+    font-weight: 400;
+}
+
+.testimonials_client {
     margin-bottom: var(--margin-default);
     padding: var(--padding-default);
     border: 1px solid var(--secondary-color);
     border-radius: 8px;
-    box-shadow: .5px .5px .5px black;
 }
 
 .perfil {
     margin-bottom: 1em;
 }
 
-.comentario {
+.comment {
+    font-size: 1.6rem;
     line-height: 1.5;
 }
 
+.doubts{
+    padding-right: var(--padding-default);
+    padding-left: var(--padding-default);
+    background-color: var(--secondary-color);
+}
 
-.faq-servico{
+.faq-service{
     margin-bottom: .8em;
     font-size: 3rem;
     font-weight: 400;
@@ -233,68 +264,82 @@ body {
     text-align: left;
 }
 
-.pergunta{
-    font-size: 1.8rem;
+.question{
+    font-size: 2rem;
 }
 
-.resposta{
+.response{
     margin-top: var(--margin-default);
+    font-size: 1.8rem;
+    font-weight: 200;
     line-height: 1.5;
 }
 
-.contato {
+.contact {
     padding: 1.6rem;
     background-color: var(--secondary-color);
 }
 
-.forms_contato legend {
-    margin-bottom: var(--margin-default);
-    font-size: 1.8rem;
-    /* display: flex;
-    flex-direction: column; */
+.form_contact{
+    padding-left: var(--padding-default);
+    padding-right: var(--padding-default);
 }
 
-.forms_contato fieldset {
+.title_form {
+    margin-bottom: var(--margin-default);
+    font-size: 2rem;
+}
+
+.form_contact fieldset {
     border: none;
     display: flex;
     flex-direction: column;
     gap: 1em;
 }
 
-.credencial_cliente{
-    border: none;
-    padding: .6em;
+.label_input_contact{
+    text-align: left;
+    font-weight: 300;
 }
 
-.credencial_cliente:focus{
+.client_credential{
+    border: none;
+    border-radius: 6px;
+    padding: 1em;
+}
+
+.client_credential:focus{
+    border: none;
+    outline: none;
     transition: all .2s ease;
     padding-left: .8em;
 }
 
-.credencial_cliente:invalid{
+.client_credential:invalid{
     border: 1px solid red;
 }
-.credencial_cliente:valid{
+.client_credentiale:valid{
     border: 1px solid rgb(154, 255, 13);
 }
 
-.msg_cliente{
-    width: 330px;
+.msg_client{
+    width: auto;
     height: 150px;
+    outline: none;
 }
 
-.enviar_msg{
+.msg_sumbit{
     padding: 1em;
-    width: 12rem;
     text-transform: uppercase;
+    letter-spacing: 2px;
     font-size: 1.4rem;
     border: none;
     border-radius: 8px;
 }
 
-.contatos{
+/* .contatos{
     margin-top: var(--margin-default);
-}
+} */
 
 .footer-main{
     background-color: var(--primary-color)

@@ -48,63 +48,35 @@
         </nav>
     </header>
 
-   <form action="" method="post" class="form-reserva-veiculo">
-    
-    <fieldset class="dadoContato">
-        <legend>Dados de Contato</legend>
-        <label for="emailCliente" class="label-reserva">E-mail:
-            <input type="email" name="emailCliente" class="input-reserva" placeholder="seu@email.com" required>
-        </label>
-        <label for="telCliente" class="label-reserva">Telefone/Celular:
-            <input type="tel" name="telCliente" class="input-reserva" placeholder="(xx) 9xxxx-xxxx" required>
-        </label>
-    </fieldset>
+    <div class="form_carrousel_wrapper">
+    <form action="" method="post" class="form_reservation form-track">
+        <fieldset class="group_form general_data form-step">
+            <legend>
+                Dados gerais
+            </legend>
 
-    <fieldset class="dadosgerais">
-        <legend>Dados do Condutor</legend>
+            <label for="email_drive" class="label_reservation">
+                Digite seu E-mail:
+            </label>
+            <input type="email" name="email_drive" id="email_drive" placeholder="nome@exemple.com" required class="input_reservation">
 
-        <label for="nameCliente" class="label-reserva"> Digite seu nome:
-            <input type="text" name="nameCliente" class="input-reserva" placeholder="Ex: João Oliveira" required>
-        </label>
+            <label for="tel_drive" class="label_reservation">
+                Digite seu telefone:
+            </label>
+            <input type="tel" name="tel_drive" id="tel_drive" class="input_reservation" placeholder="(XX) 9XXXX-XXXX" required>
 
-        <label for="nasc" class="label-reserva">Data de nascimento:
-            <input type="date" name="nasc" class="input-reserva" required>
-        </label>
+            <label for="cpf_drive" class="label_reservation">
+                Informe seu CPF:
+            </label>
 
-        <label for="cpfCliente" class="label-reserva">Digite seu CPF:
-            <input type="text" inputmode="numeric" name="cpfCliente" class="cpfCliente input-reserva" maxlength="14" placeholder="000.000.000-00" required>
-        </label>
+            <input type="text" name="cpf_drive" id="cpf_drive" inputmode="numeric" required placeholder="XXX.XXX.XXX-XX" maxlength="14" class="input_reservation">
 
-        <label for="cnhRegisto" class="label-reserva">Registro da CNH:
-            <input type="text" inputmode="numeric" name="cnhRegisto" maxlength="11" placeholder="Nº Registro" class="input-reserva" required>
-        </label>
-    </fieldset>
-
-    <fieldset class="datas-reserva">
-        <legend>Período da Locação</legend>
+            <a href="#" class="btn_advance">Continuar</a>
         
-        <label for="dataRetirada" class="label-reserva">Data de Retirada:
-            <input type="datetime-local" name="dataRetirada" class="input-reserva" required>
-        </label>
 
-        <label for="dataDevolucao" class="label-reserva">Data de Devolução:
-            <input type="datetime-local" name="dataDevolucao" class="input-reserva" required>
-        </label>
-    </fieldset>
+    </form>
 
-    <fieldset class="veiculosDisponiveis">
-        <legend>Escolha seu veículo</legend>
-        <label for="veiculos" class="label-reserva">Modelo desejado:</label>
-        <select name="veiculos" id="veiculos" class="input-reserva">
-            <option value="" disabled selected>Selecione um carro...</option>
-            <option value="cactus">C4 Cactus</option>
-            <option value="pulse">Fiat Pulse</option>
-            <option value="corolla">Toyota Corolla</option>
-        </select>
-    </fieldset>
-
-    <button type="submit" class="confirmarCarro">Confirmar Reserva</button>
-</form>
+    </div>
 
 </form>
 </body>

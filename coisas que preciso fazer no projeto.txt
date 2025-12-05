@@ -1,0 +1,22 @@
+coisas que preciso fazer no projeto locar
+
+1 - Quando clicar em algum item do menu fechar o menu e navegar direto para a sessão (Será necessário utilizar js)
+
+2 - Ajustar os caminhos dos links
+
+3 - Melhorar o formulário de reserva
+
+4 - Melhorar a sessão de dúvidas
+
+5 - Ajustar sessão de contatos
+
+
+Algumas regras de negócios
+
+1 - Um usuário pode reservar somente um carro
+
+2 - Quando o usuário selecionar o carro pela home diretamente, o veículo já deve aparecer selecionado em select.
+
+3 - O usuário precisa receber um feedback de confirmação com um código para liberação
+
+4 - Caso haja algum outro carro reservado para o usuário, não permitir a reserva atual
